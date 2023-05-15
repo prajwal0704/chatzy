@@ -1,0 +1,25 @@
+[debug] [2023-04-01T16:15:56.115Z] ----------------------------------------------------------------------
+[debug] [2023-04-01T16:15:56.120Z] Command:       /usr/local/bin/node /usr/local/bin/firebase projects:list --json
+[debug] [2023-04-01T16:15:56.121Z] CLI Version:   11.22.0
+[debug] [2023-04-01T16:15:56.121Z] Platform:      darwin
+[debug] [2023-04-01T16:15:56.122Z] Node Version:  v18.14.0
+[debug] [2023-04-01T16:15:56.124Z] Time:          Sat Apr 01 2023 21:45:56 GMT+0530 (India Standard Time)
+[debug] [2023-04-01T16:15:56.124Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-01T16:15:56.132Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-04-01T16:15:56.228Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-01T16:15:56.229Z] > authorizing via signed-in user (prajwalsp7427@gmail.com)
+[debug] [2023-04-01T16:15:56.235Z] > refreshing access token with scopes: []
+[debug] [2023-04-01T16:15:56.236Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-04-01T16:15:56.236Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[warn] ⚠  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2023-04-01T16:17:11.276Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2023-04-01T16:17:11.374Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-04-01T16:17:16.398Z] Error: Timed out.
+    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
